@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: resolve(__dirname, "./index.jsx"),
+      entry: resolve(__dirname, "./index.js"),
       name: "venti-ui-kit",
       fileName: (format) => `index.${format}.js`,
       formats: ["es"],
