@@ -13,15 +13,17 @@ export default defineConfig({
       formats: ["es"],
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
-      output: {
-        globals: {
-          react: "React",
-          "react-dom": "ReactDOM",
+      rollupOptions: {
+        // 🚫 No externals at all — fully bundle React
+        external: [],
+
+        output: {
+          // no globals needed when using ESM
         },
       },
+      emptyOutDir: true,
+      sourcemap: true,
+      minify: true,
     },
-    sourcemap: true,
-    emptyOutDir: true,
   },
 });
