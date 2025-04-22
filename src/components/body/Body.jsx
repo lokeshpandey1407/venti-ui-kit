@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { fetchStyles } from "../../api/fetchStyles";
 import styles from "./Body.module.css";
 import clsx from "clsx";
 
 export const Body = ({ children, style, className, ...props }) => {
-  useEffect(() => {
+  React.useEffect(() => {
     fetchStyles();
   }, []);
 

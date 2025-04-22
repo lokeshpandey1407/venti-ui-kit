@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { fetchStyles } from "../../api/fetchStyles";
 import styles from "./Heading1.module.css";
 import clsx from "clsx";
 
 export const Heading = ({ children, style, className, ...props }) => {
-  useEffect(() => {
+  React.useEffect(() => {
     fetchStyles();
   }, []);
 

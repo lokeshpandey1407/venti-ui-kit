@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { fetchStyles } from "../../api/fetchStyles";
 import styles from "./Caption.module.css";
 import clsx from "clsx";
 
 export const Caption = ({ children, style, className, ...props }) => {
-  useEffect(() => {
+  React.useEffect(() => {
     fetchStyles();
   }, []);
 
