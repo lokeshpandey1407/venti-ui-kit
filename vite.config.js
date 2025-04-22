@@ -10,7 +10,7 @@ export default defineConfig({
       entry: resolve(__dirname, "./index.jsx"),
       name: "venti-ui-kit",
       fileName: (format) => `index.${format}.js`,
-      formats: ["umd"],
+      formats: ["esm"],
     },
     rollupOptions: {
       external: ["react", "react-dom"],
