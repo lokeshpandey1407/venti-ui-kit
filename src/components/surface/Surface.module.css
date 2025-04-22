@@ -1,0 +1,15 @@
+.surface {
+  background-color: var(--surface-bg-color);
+  border-radius: var(--surface-rounded);
+  border-width: var(--surface-border-thickness);
+  border-color: var(--surface-border-color);
+  border-style: solid;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08); /* subtle default shadow */
+  padding: 1rem; /* optional default padding */
+  transition: box-shadow 0.3s ease;
+}

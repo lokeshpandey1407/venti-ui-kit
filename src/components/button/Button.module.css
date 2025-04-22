@@ -1,0 +1,29 @@
+.button[type="primary"] {
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  border: var(--btn-primary-border-thickness) solid var(--color-primary);
+  border-radius: var(--btn-primary-rounded);
+  color: var(--btn-primary-text-color);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button[type="secondary"] {
+  padding: 10px 20px;
+  background-color: var(--color-secondary);
+  border: var(--btn-secondary-border-thickness) solid var(--color-primary);
+  border-radius: var(--btn-secondary-rounded);
+  color: var(--btn-secondary-text-color);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button[type="primary"]:hover {
+  background-color: blue; /* slightly darker shade of primary */
+}
+
+.button[type="secondary"]:hover {
+  background-color: rgb(145, 66, 66); /* slightly darker shade of primary */
+}

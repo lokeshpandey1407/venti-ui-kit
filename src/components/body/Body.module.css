@@ -1,0 +1,6 @@
+.body-text {
+  font-family: var(--font-body-family), sans-serif;
+  color: var(--body-text-color);
+  font-weight: 400;
+  font-size: 1rem;
+}

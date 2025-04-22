@@ -1,0 +1,8 @@
+.caption {
+    font-family: var(--font-body-family), sans-serif;
+    color: var(--caption-text-color);
+    font-weight: 400;
+    font-size: 0.975rem;
+    line-height: 1.4;
+    opacity: 0.8;
+  }
