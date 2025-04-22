@@ -7,9 +7,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: resolve(__dirname, "./src/main.jsx"),
+      entry: resolve(__dirname, "./index.jsx"),
       name: "venti-ui-kit",
       fileName: (format) => `index.${format}.js`,
+      formats: ["umd"],
     },
     rollupOptions: {
       external: ["react", "react-dom"],
