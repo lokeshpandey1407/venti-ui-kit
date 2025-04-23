@@ -1,3 +1,4 @@
+//this is where we export all components
 export { Button } from "./src/components/button/Button.jsx";
 export { Heading } from "./src/components/heading1/Heading1.jsx";
 export { Body } from "./src/components/body/Body.jsx";
