@@ -10,7 +10,6 @@ export default defineConfig({
       entry: resolve(__dirname, "./index.js"),
       name: "react-beautiful-timeline",
       fileName: (format) => `index.${format}.js`,
-      formats: ["es", "umd"],
     },
     rollupOptions: {
       external: ["react", "react-dom", "tailwindcss"],
@@ -18,7 +17,6 @@ export default defineConfig({
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
-          tailwindcss: "tailwindcss",
         },
       },
     },
