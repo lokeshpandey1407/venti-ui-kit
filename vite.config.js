@@ -1,29 +1,28 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { resolve } from "path";
+import dtsPlugin from "vite-plugin-dts";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
   build: {
     lib: {
       entry: resolve(__dirname, "./index.js"),
-      name: "venti-ui-kit",
+      name: "react-beautiful-timeline",
       fileName: (format) => `index.${format}.js`,
-      formats: ["es"],
     },
     rollupOptions: {
-      rollupOptions: {
-        // 🚫 No externals at all — fully bundle React
-        external: [],
-
-        output: {
-          // no globals needed when using ESM
+      external: ["react", "react-dom", "tailwindcss"],
+      output: {
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM",
+          tailwindcss: "tailwindcss",
         },
       },
-      emptyOutDir: true,
-      sourcemap: true,
-      minify: true,
     },
+    sourcemap: true,
+    emptyOutDir: true,
   },
+  plugins: [react(), dtsPlugin({ rollupTypes: true })],
 });
