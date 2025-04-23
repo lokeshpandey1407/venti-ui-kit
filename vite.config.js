@@ -7,7 +7,7 @@ import dtsPlugin from "vite-plugin-dts";
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, "./index.jsx"),
+      entry: resolve(__dirname, "./index.js"),
       name: "react-beautiful-timeline",
       fileName: (format) => `index.${format}.js`,
     },
