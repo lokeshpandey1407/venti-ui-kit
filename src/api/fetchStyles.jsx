@@ -1,8 +1,7 @@
 import { defaultTheme } from "../assets/defaultThemeConfig";
 
 export const fetchStyles = async (currentTheme) => {
-  const theme = currentTheme || defaultTheme;
-
+  const theme = currentTheme || defaultTheme.theme;
   const cssVars = {
     // Theme Colors
     "color-primary": theme.themeColors.primary,

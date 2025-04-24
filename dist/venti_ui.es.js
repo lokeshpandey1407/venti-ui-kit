@@ -1,4 +1,4 @@
-import b from "react";
+import p from "react";
 var T = { exports: {} }, g = {};
 /**
  * @license React
@@ -9,22 +9,22 @@ var T = { exports: {} }, g = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var U;
+var z;
 function ae() {
-  if (U) return g;
-  U = 1;
+  if (z) return g;
+  z = 1;
   var o = Symbol.for("react.transitional.element"), r = Symbol.for("react.fragment");
   function a(n, c, i) {
-    var p = null;
-    if (i !== void 0 && (p = "" + i), c.key !== void 0 && (p = "" + c.key), "key" in c) {
+    var y = null;
+    if (i !== void 0 && (y = "" + i), c.key !== void 0 && (y = "" + c.key), "key" in c) {
       i = {};
-      for (var y in c)
-        y !== "key" && (i[y] = c[y]);
+      for (var b in c)
+        b !== "key" && (i[b] = c[b]);
     } else i = c;
     return c = i.ref, {
       $$typeof: o,
       type: n,
-      key: p,
+      key: y,
       ref: c !== void 0 ? c : null,
       props: i
     };
@@ -52,9 +52,9 @@ function se() {
       switch (e) {
         case k:
           return "Fragment";
-        case H:
-          return "Profiler";
         case G:
+          return "Profiler";
+        case V:
           return "StrictMode";
         case Q:
           return "Suspense";
@@ -67,18 +67,18 @@ function se() {
         switch (typeof e.tag == "number" && console.error(
           "Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."
         ), e.$$typeof) {
-          case V:
+          case J:
             return "Portal";
-          case B:
-            return (e.displayName || "Context") + ".Provider";
           case X:
+            return (e.displayName || "Context") + ".Provider";
+          case H:
             return (e._context.displayName || "Context") + ".Consumer";
           case Z:
             var t = e.render;
             return e = e.displayName, e || (e = t.displayName || t.name || "", e = e !== "" ? "ForwardRef(" + e + ")" : "ForwardRef"), e;
           case ee:
             return t = e.displayName || null, t !== null ? t : o(e.type) || "Memo";
-          case $:
+          case N:
             t = e._payload, e = e._init;
             try {
               return o(e(t));
@@ -99,17 +99,17 @@ function se() {
       }
       if (t) {
         t = console;
-        var s = t.error, u = typeof Symbol == "function" && Symbol.toStringTag && e[Symbol.toStringTag] || e.constructor.name || "Object";
+        var s = t.error, l = typeof Symbol == "function" && Symbol.toStringTag && e[Symbol.toStringTag] || e.constructor.name || "Object";
         return s.call(
           t,
           "The provided key is an unsupported type %s. This value must be coerced to a string before using it here.",
-          u
+          l
         ), r(e);
       }
     }
     function n(e) {
       if (e === k) return "<>";
-      if (typeof e == "object" && e !== null && e.$$typeof === $)
+      if (typeof e == "object" && e !== null && e.$$typeof === N)
         return "<...>";
       try {
         var t = o(e);
@@ -125,16 +125,16 @@ function se() {
     function i() {
       return Error("react-stack-top-frame");
     }
-    function p(e) {
+    function y(e) {
       if (C.call(e, "key")) {
         var t = Object.getOwnPropertyDescriptor(e, "key").get;
         if (t && t.isReactWarning) return !1;
       }
       return e.key !== void 0;
     }
-    function y(e, t) {
+    function b(e, t) {
       function s() {
-        F || (F = !0, console.error(
+        $ || ($ = !0, console.error(
           "%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)",
           t
         ));
@@ -146,17 +146,17 @@ function se() {
     }
     function q() {
       var e = o(this.type);
-      return Y[e] || (Y[e] = !0, console.error(
+      return I[e] || (I[e] = !0, console.error(
         "Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."
       )), e = this.props.ref, e !== void 0 ? e : null;
     }
-    function J(e, t, s, u, d, f, j, A) {
-      return s = f.ref, e = {
-        $$typeof: N,
+    function B(e, t, s, l, f, d, j, A) {
+      return s = d.ref, e = {
+        $$typeof: F,
         type: e,
         key: t,
-        props: f,
-        _owner: d
+        props: d,
+        _owner: f
       }, (s !== void 0 ? s : null) !== null ? Object.defineProperty(e, "ref", {
         enumerable: !1,
         get: q
@@ -182,50 +182,50 @@ function se() {
         value: A
       }), Object.freeze && (Object.freeze(e.props), Object.freeze(e)), e;
     }
-    function P(e, t, s, u, d, f, j, A) {
-      var l = t.children;
-      if (l !== void 0)
-        if (u)
-          if (oe(l)) {
-            for (u = 0; u < l.length; u++)
-              w(l[u]);
-            Object.freeze && Object.freeze(l);
+    function P(e, t, s, l, f, d, j, A) {
+      var u = t.children;
+      if (u !== void 0)
+        if (l)
+          if (oe(u)) {
+            for (l = 0; l < u.length; l++)
+              w(u[l]);
+            Object.freeze && Object.freeze(u);
           } else
             console.error(
               "React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead."
             );
-        else w(l);
+        else w(u);
       if (C.call(t, "key")) {
-        l = o(e);
+        u = o(e);
         var m = Object.keys(t).filter(function(ne) {
           return ne !== "key";
         });
-        u = 0 < m.length ? "{key: someKey, " + m.join(": ..., ") + ": ...}" : "{key: someKey}", z[l + u] || (m = 0 < m.length ? "{" + m.join(": ..., ") + ": ...}" : "{}", console.error(
+        l = 0 < m.length ? "{key: someKey, " + m.join(": ..., ") + ": ...}" : "{key: someKey}", U[u + l] || (m = 0 < m.length ? "{" + m.join(": ..., ") + ": ...}" : "{}", console.error(
           `A props object containing a "key" prop is being spread into JSX:
   let props = %s;
   <%s {...props} />
 React keys must be passed directly to JSX without using spread:
   let props = %s;
   <%s key={someKey} {...props} />`,
-          u,
           l,
+          u,
           m,
-          l
-        ), z[l + u] = !0);
+          u
+        ), U[u + l] = !0);
       }
-      if (l = null, s !== void 0 && (a(s), l = "" + s), p(t) && (a(t.key), l = "" + t.key), "key" in t) {
+      if (u = null, s !== void 0 && (a(s), u = "" + s), y(t) && (a(t.key), u = "" + t.key), "key" in t) {
         s = {};
         for (var O in t)
           O !== "key" && (s[O] = t[O]);
       } else s = t;
-      return l && y(
+      return u && b(
         s,
         typeof e == "function" ? e.displayName || e.name || "Unknown" : e
-      ), J(
+      ), B(
         e,
-        l,
-        f,
+        u,
         d,
+        f,
         c(),
         s,
         j,
@@ -233,9 +233,9 @@ React keys must be passed directly to JSX without using spread:
       );
     }
     function w(e) {
-      typeof e == "object" && e !== null && e.$$typeof === N && e._store && (e._store.validated = 1);
+      typeof e == "object" && e !== null && e.$$typeof === F && e._store && (e._store.validated = 1);
     }
-    var R = b, N = Symbol.for("react.transitional.element"), V = Symbol.for("react.portal"), k = Symbol.for("react.fragment"), G = Symbol.for("react.strict_mode"), H = Symbol.for("react.profiler"), X = Symbol.for("react.consumer"), B = Symbol.for("react.context"), Z = Symbol.for("react.forward_ref"), Q = Symbol.for("react.suspense"), K = Symbol.for("react.suspense_list"), ee = Symbol.for("react.memo"), $ = Symbol.for("react.lazy"), re = Symbol.for("react.activity"), te = Symbol.for("react.client.reference"), x = R.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, C = Object.prototype.hasOwnProperty, oe = Array.isArray, S = console.createTask ? console.createTask : function() {
+    var R = p, F = Symbol.for("react.transitional.element"), J = Symbol.for("react.portal"), k = Symbol.for("react.fragment"), V = Symbol.for("react.strict_mode"), G = Symbol.for("react.profiler"), H = Symbol.for("react.consumer"), X = Symbol.for("react.context"), Z = Symbol.for("react.forward_ref"), Q = Symbol.for("react.suspense"), K = Symbol.for("react.suspense_list"), ee = Symbol.for("react.memo"), N = Symbol.for("react.lazy"), re = Symbol.for("react.activity"), te = Symbol.for("react.client.reference"), x = R.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, C = Object.prototype.hasOwnProperty, oe = Array.isArray, S = console.createTask ? console.createTask : function() {
       return null;
     };
     R = {
@@ -243,33 +243,33 @@ React keys must be passed directly to JSX without using spread:
         return e();
       }
     };
-    var F, Y = {}, I = R["react-stack-bottom-frame"].bind(
+    var $, I = {}, Y = R["react-stack-bottom-frame"].bind(
       R,
       i
-    )(), L = S(n(i)), z = {};
-    h.Fragment = k, h.jsx = function(e, t, s, u, d) {
-      var f = 1e4 > x.recentlyCreatedOwnerStacks++;
+    )(), L = S(n(i)), U = {};
+    h.Fragment = k, h.jsx = function(e, t, s, l, f) {
+      var d = 1e4 > x.recentlyCreatedOwnerStacks++;
       return P(
         e,
         t,
         s,
         !1,
-        u,
-        d,
-        f ? Error("react-stack-top-frame") : I,
-        f ? S(n(e)) : L
+        l,
+        f,
+        d ? Error("react-stack-top-frame") : Y,
+        d ? S(n(e)) : L
       );
-    }, h.jsxs = function(e, t, s, u, d) {
-      var f = 1e4 > x.recentlyCreatedOwnerStacks++;
+    }, h.jsxs = function(e, t, s, l, f) {
+      var d = 1e4 > x.recentlyCreatedOwnerStacks++;
       return P(
         e,
         t,
         s,
         !0,
-        u,
-        d,
-        f ? Error("react-stack-top-frame") : I,
-        f ? S(n(e)) : L
+        l,
+        f,
+        d ? Error("react-stack-top-frame") : Y,
+        d ? S(n(e)) : L
       );
     };
   }()), h;
@@ -279,8 +279,93 @@ function ce() {
   return M || (M = 1, process.env.NODE_ENV === "production" ? T.exports = ae() : T.exports = se()), T.exports;
 }
 var E = ce();
-const ue = {}, v = async (o) => {
-  const r = ue, a = {
+const le = {
+  theme: {
+    header: {
+      companyLogo: {
+        imageUrl: "https://example.com/logo.png",
+        size: "md",
+        // keep "md" for visual balance
+        alignment: "left"
+      },
+      eventLogo: {
+        imageUrl: "https://example.com/event.png",
+        size: "md",
+        alignment: "right"
+      }
+    },
+    themeColors: {
+      primary: "#3B82F6",
+      // Modern blue (Tailwind blue-500)
+      secondary: "#6366F1"
+      // Indigo (Tailwind indigo-500)
+    },
+    typography: {
+      headingFont: {
+        type: "custom",
+        // Clean and modern font
+        variants: {
+          bold: "https://example.com/fonts/poppins-bold.ttf"
+        }
+      },
+      bodyFont: {
+        type: "google",
+        family: "Inter, sans-serif",
+        // Very readable and modern
+        variants: {
+          regular: "https://example.com/fonts/inter-regular.ttf"
+        }
+      },
+      typeScales: {
+        heading: {
+          font: "heading",
+          color: "#393939"
+          // Dark gray for strong contrast
+        },
+        subHeading: {
+          font: "body",
+          color: "#374151"
+          // Muted gray
+        },
+        body: {
+          color: "#4B5563"
+          // Balanced readability
+        },
+        caption: {
+          color: "#6B7280"
+          // Lighter gray for less emphasis
+        }
+      }
+    },
+    buttons: {
+      primary: {
+        textColor: "#FFFFFF",
+        rounded: "lg",
+        borderThickness: "lg"
+      },
+      secondary: {
+        textColor: "#1F2937",
+        // Almost black for contrast on lighter buttons
+        rounded: "sm",
+        borderThickness: "sm"
+      }
+    },
+    surfaces: {
+      color: "red",
+      rounded: "md",
+      borderThickness: "sm",
+      borderColor: "#E5E7EB"
+      // Light neutral border
+    },
+    background: {
+      color: "#F9FAFB",
+      // Very light gray for soft backgrounds
+      portraitImageUrl: "https://example.com/bg-portrait-new.jpg",
+      landscapeImageUrl: "https://example.com/bg-landscape-new.jpg"
+    }
+  }
+}, v = async (o) => {
+  const r = le.theme, a = {
     // Theme Colors
     "color-primary": r.themeColors.primary,
     "color-secondary": r.themeColors.secondary,
@@ -326,8 +411,8 @@ const ue = {}, v = async (o) => {
   Object.entries(a).forEach(([c, i]) => {
     i && n.style.setProperty(`--${c}`, i);
   });
-}, le = "_button_1mj76_1", ie = {
-  button: le
+}, ue = "_button_1mj76_1", ie = {
+  button: ue
 };
 function W(o) {
   var r, a, n = "";
@@ -342,7 +427,13 @@ function _() {
   for (var o, r, a = 0, n = "", c = arguments.length; a < c; a++) (o = arguments[a]) && (r = W(o)) && (n && (n += " "), n += r);
   return n;
 }
-const Ee = ({ children: o, type: r, style: a, className: n = "", ...c }) => (b.useEffect(() => {
+const Ee = ({
+  children: o,
+  type: r = "primary",
+  style: a,
+  className: n = "",
+  ...c
+}) => (p.useEffect(() => {
   v();
 }, []), /* @__PURE__ */ E.jsx(
   "button",
@@ -353,19 +444,19 @@ const Ee = ({ children: o, type: r, style: a, className: n = "", ...c }) => (b.u
     ...c,
     children: o
   }
-)), fe = "_heading_1maqq_1", de = {
-  heading: fe
-}, ve = ({ children: o, style: r, className: a, ...n }) => (b.useEffect(() => {
+)), de = "_heading_1maqq_1", fe = {
+  heading: de
+}, ve = ({ children: o, style: r, className: a, ...n }) => (p.useEffect(() => {
   v();
 }, []), /* @__PURE__ */ E.jsx(
   "h1",
   {
-    className: _(de.heading, a),
+    className: _(fe.heading, a),
     style: { ...r },
     ...n,
     children: o
   }
-)), me = {}, _e = ({ children: o, style: r, className: a, ...n }) => (b.useEffect(() => {
+)), me = {}, _e = ({ children: o, style: r, className: a, ...n }) => (p.useEffect(() => {
   v();
 }, []), /* @__PURE__ */ E.jsx(
   "h1",
@@ -375,21 +466,21 @@ const Ee = ({ children: o, type: r, style: a, className: n = "", ...c }) => (b.u
     ...n,
     children: o
   }
-)), be = "_caption_fu0gv_1", pe = {
-  caption: be
-}, Re = ({ children: o, style: r, className: a, ...n }) => (b.useEffect(() => {
+)), pe = "_caption_fu0gv_1", ye = {
+  caption: pe
+}, Re = ({ children: o, style: r, className: a, ...n }) => (p.useEffect(() => {
   v();
 }, []), /* @__PURE__ */ E.jsx(
   "h1",
   {
-    className: _(pe.caption, a),
+    className: _(ye.caption, a),
     style: { ...r },
     ...n,
     children: o
   }
-)), ye = "_surface_1sfre_1", ge = {
-  surface: ye
-}, Te = ({ children: o, style: r, className: a, ...n }) => (b.useEffect(() => {
+)), be = "_surface_1sfre_1", ge = {
+  surface: be
+}, Te = ({ children: o, style: r, className: a, ...n }) => (p.useEffect(() => {
   v();
 }, []), /* @__PURE__ */ E.jsx(
   "div",

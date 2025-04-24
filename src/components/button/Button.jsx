@@ -3,7 +3,13 @@ import { fetchStyles } from "../../api/fetchStyles";
 import styles from "./Button.module.css";
 import clsx from "clsx";
 
-export const Button = ({ children, type, style, className = "", ...props }) => {
+export const Button = ({
+  children,
+  type = "primary",
+  style,
+  className = "",
+  ...props
+}) => {
   React.useEffect(() => {
     fetchStyles();
   }, []);
