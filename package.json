@@ -1,10 +1,11 @@
 {
   "name": "venti_ui",
   "private": false,
-  "version": "0.0.9",
+  "version": "0.0.10",
   "type": "module",
   "files": [
-    "dist"
+    "dist/*",
+    "src/**/*"
   ],
   "exports": {
     ".": {
