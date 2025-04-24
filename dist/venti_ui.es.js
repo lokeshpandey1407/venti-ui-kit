@@ -1,3 +1,4 @@
+(function(){"use strict";try{if(typeof document<"u"){var r=document.createElement("style");r.appendChild(document.createTextNode("._button_1mj76_1[type=primary]{padding:10px 20px;background-color:var(--color-primary);border:var(--btn-primary-border-thickness) solid var(--color-primary);border-radius:var(--btn-primary-rounded);color:var(--btn-primary-text-color);cursor:pointer;font-weight:700;transition:background-color .2s ease-in-out}._button_1mj76_1[type=secondary]{padding:10px 20px;background-color:var(--color-secondary);border:var(--btn-secondary-border-thickness) solid var(--color-primary);border-radius:var(--btn-secondary-rounded);color:var(--btn-secondary-text-color);cursor:pointer;font-weight:700;transition:background-color .2s ease-in-out}._button_1mj76_1[type=primary]:hover{background-color:#00f}._button_1mj76_1[type=secondary]:hover{background-color:#914242}._heading_1maqq_1{font-family:var(--font-heading-family),sans-serif;color:var(--heading-color);font-weight:700;font-size:2.5rem;line-height:1.2;margin-bottom:1rem}._body-text_14yvi_1{font-family:var(--font-body-family),sans-serif;color:var(--body-text-color);font-weight:400;font-size:1rem}._caption_fu0gv_1{font-family:var(--font-body-family),sans-serif;color:var(--caption-text-color);font-weight:400;font-size:.975rem;line-height:1.4;opacity:.8}._surface_1sfre_1{background-color:var(--surface-bg-color);border-radius:var(--surface-rounded);border-width:var(--surface-border-thickness);border-color:var(--surface-border-color);border-style:solid;height:200px;width:200px;display:flex;justify-content:center;align-items:center;box-shadow:0 2px 10px #00000014;padding:1rem;transition:box-shadow .3s ease}")),document.head.appendChild(r)}}catch(o){console.error("vite-plugin-css-injected-by-js",o)}})();
 import p from "react";
 var T = { exports: {} }, g = {};
 /**
@@ -365,7 +366,7 @@ const le = {
     }
   }
 }, v = async (o) => {
-  const r = le.theme, a = {
+  const r = o || le.theme, a = {
     // Theme Colors
     "color-primary": r.themeColors.primary,
     "color-secondary": r.themeColors.secondary,
@@ -432,16 +433,17 @@ const Ee = ({
   type: r = "primary",
   style: a,
   className: n = "",
-  ...c
+  theme: c = null,
+  ...i
 }) => (p.useEffect(() => {
-  v();
+  v(c);
 }, []), /* @__PURE__ */ E.jsx(
   "button",
   {
     className: _(ie.button, n),
     type: r,
     style: { ...a },
-    ...c,
+    ...i,
     children: o
   }
 )), de = "_heading_1maqq_1", fe = {

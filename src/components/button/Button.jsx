@@ -8,10 +8,11 @@ export const Button = ({
   type = "primary",
   style,
   className = "",
+  theme = null,
   ...props
 }) => {
   React.useEffect(() => {
-    fetchStyles();
+    fetchStyles(theme);
   }, []);
 
   return (

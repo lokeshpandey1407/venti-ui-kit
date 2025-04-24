@@ -1,7 +1,7 @@
 {
   "name": "venti_ui",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.6",
   "type": "module",
   "files": [
     "dist"
@@ -10,8 +10,7 @@
     ".": {
       "import": "./dist/venti_ui.es.js",
       "require": "./dist/venti_ui.umd.js"
-    },
-    "./dist/style.css": "./dist/venti_ui.css"
+    }
   },
   "main": "./dist/venti_ui.umd.js",
   "module": "./dist/venti_ui.es.js",
@@ -37,6 +36,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
-    "vite": "^6.2.0"
+    "vite": "^6.2.0",
+    "vite-plugin-css-injected-by-js": "^3.5.2"
   }
 }
