@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "index.js"),
-      name: "ventiUi", // Global variable for UMD
-      fileName: (format) => `index.${format}.js`,
+      name: "venti_ui", // Global variable for UMD
+      fileName: (format) => `venti_ui.${format}.js`,
       formats: ["umd", "es"],
     },
     rollupOptions: {
