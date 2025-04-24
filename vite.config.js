@@ -1,10 +1,21 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
-import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), cssInjectedByJsPlugin()],
+  plugins: [react()],
+  css: {
+    modules: {
+      localsConvention: "camelCase",
+      scopeBehaviour: "local",
+      generateScopedName: "[name]__[local]___[hash:base64:5]",
+    },
+    preprocessorOptions: {
+      css: {
+        javascriptEnabled: true,
+      },
+    },
+  },
   build: {
     lib: {
       entry: path.resolve(__dirname, "index.js"),

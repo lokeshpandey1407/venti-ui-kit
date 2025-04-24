@@ -1,7 +1,7 @@
 {
   "name": "venti_ui",
   "private": false,
-  "version": "0.0.7",
+  "version": "0.0.9",
   "type": "module",
   "files": [
     "dist"
@@ -10,7 +10,8 @@
     ".": {
       "import": "./dist/venti_ui.es.js",
       "require": "./dist/venti_ui.umd.js"
-    }
+    },
+    "./dist/style.css": "./dist/venti_ui.css"
   },
   "main": "./dist/venti_ui.umd.js",
   "module": "./dist/venti_ui.es.js",
