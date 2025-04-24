@@ -5,3 +5,4 @@ export { Heading } from "./src/components/heading1/Heading1";
 export { Body } from "./src/components/body/Body";
 export { Caption } from "./src/components/caption/Caption";
 export { Surface } from "./src/components/surface/Surface";
+export { fetchStyles } from "./src/api/fetchStyles";

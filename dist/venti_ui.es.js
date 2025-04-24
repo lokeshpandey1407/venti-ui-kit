@@ -1,5 +1,6 @@
-import p from "react";
-var T = { exports: {} }, g = {};
+(function(){"use strict";try{if(typeof document<"u"){var o=document.createElement("style");o.appendChild(document.createTextNode(':root{--size-sm: 32px;--size-md: 64px;--size-lg: 96px;--border-sm: 1px;--border-md: 2px;--border-lg: 4px;--radius-none: 0;--radius-sm: 4px;--radius-md: 8px;--radius-lg: 12px;--radius-full: 9999px;--venti-color-primary: yellow;--venti-color-secondary: red;--font-heading-type: custom;--font-heading-bold: url(https://example.com/fonts/bold.ttf);--font-body-type: google;--font-body-family: "Roboto", sans-serif;--font-body-regular: url(https://example.com/fonts/regular.ttf);--heading-font: var(--font-heading-type);--heading-color: #222222;--subheading-font: var(--font-body-type);--subheading-color: #444444;--body-text-color: #333333;--caption-text-color: #666666;--header-company-logo-url: url(https://example.com/logo.png);--header-company-logo-size: var(--size-md);--header-company-logo-align: left;--header-event-logo-url: url(https://example.com/event.png);--header-event-logo-size: var(--size-md);--header-event-logo-align: right;--footer-sponsor-icon-1: url(https://example.com/sponsor1.png);--footer-sponsor-icon-2: url(https://example.com/sponsor2.png);--btn-primary-text-color: #ffffff;--btn-primary-rounded: var(--radius-md);--btn-primary-border-thickness: var(--border-md);--btn-secondary-text-color: #333333;--btn-secondary-rounded: var(--radius-lg);--btn-secondary-border-thickness: var(--border-sm);--surface-bg-color: #ffffff;--surface-rounded: var(--radius-sm);--surface-border-thickness: var(--border-sm);--surface-border-color: #dddddd;--background-color: #f5f5f5;--background-image-portrait: url(https://example.com/bg-portrait.jpg);--background-image-landscape: url(https://example.com/bg-landscape.jpg)}._button_7i646_1[display=primary]{padding:10px 20px;background-color:var(--venti-color-primary);border:var(--btn-primary-border-thickness) solid var(--venti-color-primary);border-radius:var(--btn-primary-rounded);color:var(--btn-primary-text-color);cursor:pointer;font-weight:700;transition:background-color .2s ease-in-out}._button_7i646_1[display=secondary]{padding:10px 20px;background-color:var(--venti-color-secondary);border:var(--btn-secondary-border-thickness) solid var(--venti-color-primary);border-radius:var(--btn-secondary-rounded);color:var(--btn-secondary-text-color);cursor:pointer;font-weight:700;transition:background-color .2s ease-in-out}._button_7i646_1[display=primary]:hover{background-color:#00f}._button_7i646_1[display=secondary]:hover{background-color:#914242}._heading_1maqq_1{font-family:var(--font-heading-family),sans-serif;color:var(--heading-color);font-weight:700;font-size:2.5rem;line-height:1.2;margin-bottom:1rem}._body-text_14yvi_1{font-family:var(--font-body-family),sans-serif;color:var(--body-text-color);font-weight:400;font-size:1rem}._caption_fu0gv_1{font-family:var(--font-body-family),sans-serif;color:var(--caption-text-color);font-weight:400;font-size:.975rem;line-height:1.4;opacity:.8}._surface_1sfre_1{background-color:var(--surface-bg-color);border-radius:var(--surface-rounded);border-width:var(--surface-border-thickness);border-color:var(--surface-border-color);border-style:solid;height:200px;width:200px;display:flex;justify-content:center;align-items:center;box-shadow:0 2px 10px #00000014;padding:1rem;transition:box-shadow .3s ease}')),document.head.appendChild(o)}}catch(r){console.error("vite-plugin-css-injected-by-js",r)}})();
+import y from "react";
+var T = { exports: {} }, b = {};
 /**
  * @license React
  * react-jsx-runtime.production.js
@@ -9,29 +10,29 @@ var T = { exports: {} }, g = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var z;
-function ae() {
-  if (z) return g;
-  z = 1;
-  var o = Symbol.for("react.transitional.element"), r = Symbol.for("react.fragment");
-  function a(n, c, i) {
-    var b = null;
-    if (i !== void 0 && (b = "" + i), c.key !== void 0 && (b = "" + c.key), "key" in c) {
-      i = {};
-      for (var y in c)
-        y !== "key" && (i[y] = c[y]);
-    } else i = c;
-    return c = i.ref, {
-      $$typeof: o,
-      type: n,
-      key: b,
-      ref: c !== void 0 ? c : null,
-      props: i
+var D;
+function se() {
+  if (D) return b;
+  D = 1;
+  var n = Symbol.for("react.transitional.element"), r = Symbol.for("react.fragment");
+  function s(a, l, d) {
+    var h = null;
+    if (d !== void 0 && (h = "" + d), l.key !== void 0 && (h = "" + l.key), "key" in l) {
+      d = {};
+      for (var g in l)
+        g !== "key" && (d[g] = l[g]);
+    } else d = l;
+    return l = d.ref, {
+      $$typeof: n,
+      type: a,
+      key: h,
+      ref: l !== void 0 ? l : null,
+      props: d
     };
   }
-  return g.Fragment = r, g.jsx = a, g.jsxs = a, g;
+  return b.Fragment = r, b.jsx = s, b.jsxs = s, b;
 }
-var h = {};
+var v = {};
 /**
  * @license React
  * react-jsx-runtime.development.js
@@ -41,47 +42,47 @@ var h = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var D;
-function se() {
-  return D || (D = 1, process.env.NODE_ENV !== "production" && function() {
-    function o(e) {
+var M;
+function ce() {
+  return M || (M = 1, process.env.NODE_ENV !== "production" && function() {
+    function n(e) {
       if (e == null) return null;
       if (typeof e == "function")
-        return e.$$typeof === te ? null : e.displayName || e.name || null;
+        return e.$$typeof === oe ? null : e.displayName || e.name || null;
       if (typeof e == "string") return e;
       switch (e) {
-        case k:
+        case x:
           return "Fragment";
-        case H:
+        case G:
           return "Profiler";
-        case q:
+        case V:
           return "StrictMode";
-        case Q:
-          return "Suspense";
         case K:
+          return "Suspense";
+        case ee:
           return "SuspenseList";
-        case re:
+        case te:
           return "Activity";
       }
       if (typeof e == "object")
         switch (typeof e.tag == "number" && console.error(
           "Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."
         ), e.$$typeof) {
-          case V:
+          case J:
             return "Portal";
-          case X:
-            return (e.displayName || "Context") + ".Provider";
-          case G:
-            return (e._context.displayName || "Context") + ".Consumer";
           case Z:
+            return (e.displayName || "Context") + ".Provider";
+          case X:
+            return (e._context.displayName || "Context") + ".Consumer";
+          case Q:
             var t = e.render;
             return e = e.displayName, e || (e = t.displayName || t.name || "", e = e !== "" ? "ForwardRef(" + e + ")" : "ForwardRef"), e;
-          case ee:
-            return t = e.displayName || null, t !== null ? t : o(e.type) || "Memo";
-          case C:
+          case re:
+            return t = e.displayName || null, t !== null ? t : n(e.type) || "Memo";
+          case N:
             t = e._payload, e = e._init;
             try {
-              return o(e(t));
+              return n(e(t));
             } catch {
             }
         }
@@ -90,7 +91,7 @@ function se() {
     function r(e) {
       return "" + e;
     }
-    function a(e) {
+    function s(e) {
       try {
         r(e);
         var t = !1;
@@ -99,67 +100,67 @@ function se() {
       }
       if (t) {
         t = console;
-        var s = t.error, l = typeof Symbol == "function" && Symbol.toStringTag && e[Symbol.toStringTag] || e.constructor.name || "Object";
-        return s.call(
+        var c = t.error, i = typeof Symbol == "function" && Symbol.toStringTag && e[Symbol.toStringTag] || e.constructor.name || "Object";
+        return c.call(
           t,
           "The provided key is an unsupported type %s. This value must be coerced to a string before using it here.",
-          l
+          i
         ), r(e);
       }
     }
-    function n(e) {
-      if (e === k) return "<>";
-      if (typeof e == "object" && e !== null && e.$$typeof === C)
+    function a(e) {
+      if (e === x) return "<>";
+      if (typeof e == "object" && e !== null && e.$$typeof === N)
         return "<...>";
       try {
-        var t = o(e);
+        var t = n(e);
         return t ? "<" + t + ">" : "<...>";
       } catch {
         return "<...>";
       }
     }
-    function c() {
-      var e = x.A;
+    function l() {
+      var e = S.A;
       return e === null ? null : e.getOwner();
     }
-    function i() {
+    function d() {
       return Error("react-stack-top-frame");
     }
-    function b(e) {
-      if (F.call(e, "key")) {
+    function h(e) {
+      if ($.call(e, "key")) {
         var t = Object.getOwnPropertyDescriptor(e, "key").get;
         if (t && t.isReactWarning) return !1;
       }
       return e.key !== void 0;
     }
-    function y(e, t) {
-      function s() {
-        $ || ($ = !0, console.error(
+    function g(e, t) {
+      function c() {
+        L || (L = !0, console.error(
           "%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)",
           t
         ));
       }
-      s.isReactWarning = !0, Object.defineProperty(e, "key", {
-        get: s,
+      c.isReactWarning = !0, Object.defineProperty(e, "key", {
+        get: c,
         configurable: !0
       });
     }
-    function W() {
-      var e = o(this.type);
+    function B() {
+      var e = n(this.type);
       return I[e] || (I[e] = !0, console.error(
         "Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."
       )), e = this.props.ref, e !== void 0 ? e : null;
     }
-    function J(e, t, s, l, f, d, j, A) {
-      return s = d.ref, e = {
-        $$typeof: N,
+    function H(e, t, c, i, f, m, A, O) {
+      return c = m.ref, e = {
+        $$typeof: C,
         type: e,
         key: t,
-        props: d,
+        props: m,
         _owner: f
-      }, (s !== void 0 ? s : null) !== null ? Object.defineProperty(e, "ref", {
+      }, (c !== void 0 ? c : null) !== null ? Object.defineProperty(e, "ref", {
         enumerable: !1,
-        get: W
+        get: B
       }) : Object.defineProperty(e, "ref", { enumerable: !1, value: null }), e._store = {}, Object.defineProperty(e._store, "validated", {
         configurable: !1,
         enumerable: !1,
@@ -174,68 +175,68 @@ function se() {
         configurable: !1,
         enumerable: !1,
         writable: !0,
-        value: j
+        value: A
       }), Object.defineProperty(e, "_debugTask", {
         configurable: !1,
         enumerable: !1,
         writable: !0,
-        value: A
+        value: O
       }), Object.freeze && (Object.freeze(e.props), Object.freeze(e)), e;
     }
-    function w(e, t, s, l, f, d, j, A) {
+    function P(e, t, c, i, f, m, A, O) {
       var u = t.children;
       if (u !== void 0)
-        if (l)
-          if (oe(u)) {
-            for (l = 0; l < u.length; l++)
-              P(u[l]);
+        if (i)
+          if (ne(u)) {
+            for (i = 0; i < u.length; i++)
+              w(u[i]);
             Object.freeze && Object.freeze(u);
           } else
             console.error(
               "React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead."
             );
-        else P(u);
-      if (F.call(t, "key")) {
-        u = o(e);
-        var m = Object.keys(t).filter(function(ne) {
-          return ne !== "key";
+        else w(u);
+      if ($.call(t, "key")) {
+        u = n(e);
+        var p = Object.keys(t).filter(function(ae) {
+          return ae !== "key";
         });
-        l = 0 < m.length ? "{key: someKey, " + m.join(": ..., ") + ": ...}" : "{key: someKey}", U[u + l] || (m = 0 < m.length ? "{" + m.join(": ..., ") + ": ...}" : "{}", console.error(
+        i = 0 < p.length ? "{key: someKey, " + p.join(": ..., ") + ": ...}" : "{key: someKey}", Y[u + i] || (p = 0 < p.length ? "{" + p.join(": ..., ") + ": ...}" : "{}", console.error(
           `A props object containing a "key" prop is being spread into JSX:
   let props = %s;
   <%s {...props} />
 React keys must be passed directly to JSX without using spread:
   let props = %s;
   <%s key={someKey} {...props} />`,
-          l,
+          i,
           u,
-          m,
+          p,
           u
-        ), U[u + l] = !0);
+        ), Y[u + i] = !0);
       }
-      if (u = null, s !== void 0 && (a(s), u = "" + s), b(t) && (a(t.key), u = "" + t.key), "key" in t) {
-        s = {};
-        for (var O in t)
-          O !== "key" && (s[O] = t[O]);
-      } else s = t;
-      return u && y(
-        s,
+      if (u = null, c !== void 0 && (s(c), u = "" + c), h(t) && (s(t.key), u = "" + t.key), "key" in t) {
+        c = {};
+        for (var F in t)
+          F !== "key" && (c[F] = t[F]);
+      } else c = t;
+      return u && g(
+        c,
         typeof e == "function" ? e.displayName || e.name || "Unknown" : e
-      ), J(
+      ), H(
         e,
         u,
-        d,
+        m,
         f,
-        c(),
-        s,
-        j,
-        A
+        l(),
+        c,
+        A,
+        O
       );
     }
-    function P(e) {
-      typeof e == "object" && e !== null && e.$$typeof === N && e._store && (e._store.validated = 1);
+    function w(e) {
+      typeof e == "object" && e !== null && e.$$typeof === C && e._store && (e._store.validated = 1);
     }
-    var R = p, N = Symbol.for("react.transitional.element"), V = Symbol.for("react.portal"), k = Symbol.for("react.fragment"), q = Symbol.for("react.strict_mode"), H = Symbol.for("react.profiler"), G = Symbol.for("react.consumer"), X = Symbol.for("react.context"), Z = Symbol.for("react.forward_ref"), Q = Symbol.for("react.suspense"), K = Symbol.for("react.suspense_list"), ee = Symbol.for("react.memo"), C = Symbol.for("react.lazy"), re = Symbol.for("react.activity"), te = Symbol.for("react.client.reference"), x = R.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, F = Object.prototype.hasOwnProperty, oe = Array.isArray, S = console.createTask ? console.createTask : function() {
+    var R = y, C = Symbol.for("react.transitional.element"), J = Symbol.for("react.portal"), x = Symbol.for("react.fragment"), V = Symbol.for("react.strict_mode"), G = Symbol.for("react.profiler"), X = Symbol.for("react.consumer"), Z = Symbol.for("react.context"), Q = Symbol.for("react.forward_ref"), K = Symbol.for("react.suspense"), ee = Symbol.for("react.suspense_list"), re = Symbol.for("react.memo"), N = Symbol.for("react.lazy"), te = Symbol.for("react.activity"), oe = Symbol.for("react.client.reference"), S = R.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, $ = Object.prototype.hasOwnProperty, ne = Array.isArray, j = console.createTask ? console.createTask : function() {
       return null;
     };
     R = {
@@ -243,43 +244,43 @@ React keys must be passed directly to JSX without using spread:
         return e();
       }
     };
-    var $, I = {}, L = R["react-stack-bottom-frame"].bind(
+    var L, I = {}, U = R["react-stack-bottom-frame"].bind(
       R,
-      i
-    )(), Y = S(n(i)), U = {};
-    h.Fragment = k, h.jsx = function(e, t, s, l, f) {
-      var d = 1e4 > x.recentlyCreatedOwnerStacks++;
-      return w(
+      d
+    )(), z = j(a(d)), Y = {};
+    v.Fragment = x, v.jsx = function(e, t, c, i, f) {
+      var m = 1e4 > S.recentlyCreatedOwnerStacks++;
+      return P(
         e,
         t,
-        s,
+        c,
         !1,
-        l,
+        i,
         f,
-        d ? Error("react-stack-top-frame") : L,
-        d ? S(n(e)) : Y
+        m ? Error("react-stack-top-frame") : U,
+        m ? j(a(e)) : z
       );
-    }, h.jsxs = function(e, t, s, l, f) {
-      var d = 1e4 > x.recentlyCreatedOwnerStacks++;
-      return w(
+    }, v.jsxs = function(e, t, c, i, f) {
+      var m = 1e4 > S.recentlyCreatedOwnerStacks++;
+      return P(
         e,
         t,
-        s,
+        c,
         !0,
-        l,
+        i,
         f,
-        d ? Error("react-stack-top-frame") : L,
-        d ? S(n(e)) : Y
+        m ? Error("react-stack-top-frame") : U,
+        m ? j(a(e)) : z
       );
     };
-  }()), h;
+  }()), v;
 }
-var M;
-function ce() {
-  return M || (M = 1, process.env.NODE_ENV === "production" ? T.exports = ae() : T.exports = se()), T.exports;
+var W;
+function le() {
+  return W || (W = 1, process.env.NODE_ENV === "production" ? T.exports = se() : T.exports = ce()), T.exports;
 }
-var E = ce();
-const le = {
+var E = le();
+const o = {
   theme: {
     header: {
       companyLogo: {
@@ -294,15 +295,20 @@ const le = {
         alignment: "right"
       }
     },
+    footer: {
+      iconUrls: []
+      // Optional: add sponsor icons if needed
+    },
     themeColors: {
       primary: "#3B82F6",
       // Modern blue (Tailwind blue-500)
-      secondary: "#6366F1"
+      secondary: "#6300F1"
       // Indigo (Tailwind indigo-500)
     },
     typography: {
       headingFont: {
         type: "custom",
+        family: "Poppins",
         // Clean and modern font
         variants: {
           bold: "https://example.com/fonts/poppins-bold.ttf"
@@ -364,138 +370,140 @@ const le = {
       landscapeImageUrl: "https://example.com/bg-landscape-new.jpg"
     }
   }
-}, v = async (o) => {
-  const r = o || le.theme, a = {
+}, _ = async (n) => {
+  console.log(o.theme);
+  const r = n || o.theme, s = {
     // Theme Colors
-    "color-primary": r.themeColors.primary,
-    "color-secondary": r.themeColors.secondary,
+    "venti-color-primary": r.themeColors.primary || o.theme.themeColors.primary,
+    "venti-color-secondary": r.themeColors.secondary || o.theme.themeColors.secondary,
     // Typography - Heading
-    "font-heading-type": r.typography.headingFont.type,
-    "font-heading-bold": r.typography.headingFont.variants.bold,
-    "font-heading-size-adjustment": r.typography.headingFont.sizeAdjustment,
+    "font-heading-type": r.typography.headingFont.type || o.theme.typography.headingFont.type,
+    "font-heading-bold": r.typography.headingFont.variants.bold || o.theme.typography.headingFont.variants.bold,
+    "font-heading-size-adjustment": r.typography.headingFont.sizeAdjustment || o.theme.typography.headingFont.sizeAdjustment,
     // Typography - Body
-    "font-body-type": r.typography.bodyFont.type,
-    "font-body-family": r.typography.bodyFont.family,
-    "font-body-regular": r.typography.bodyFont.variants.regular,
+    "font-body-type": r.typography.bodyFont.type || o.theme.typography.bodyFont.type,
+    "font-body-family": r.typography.bodyFont.family || o.theme.typography.bodyFont.family,
+    "font-body-regular": r.typography.bodyFont.variants.regular || o.theme.typography.bodyFont.variants.regular,
     // Type Scales
-    "heading-font": r.typography.typeScales.heading.font,
-    "heading-color": r.typography.typeScales.heading.color,
-    "subheading-font": r.typography.typeScales.subHeading.font,
-    "subheading-color": r.typography.typeScales.subHeading.color,
-    "body-text-color": r.typography.typeScales.body.color,
-    "caption-text-color": r.typography.typeScales.caption.color,
+    "heading-font": r.typography.typeScales.heading.font || o.theme.typography.typeScales.heading.font,
+    "heading-color": r.typography.typeScales.heading.color || o.theme.typography.typeScales.heading.color,
+    "subheading-font": r.typography.typeScales.subHeading.font || o.theme.typography.typeScales.subHeading.font,
+    "subheading-color": r.typography.typeScales.subHeading.color || o.theme.typography.typeScales.subHeading.color,
+    "body-text-color": r.typography.typeScales.body.color || o.theme.typography.typeScales.body.color,
+    "caption-text-color": r.typography.typeScales.caption.color || o.theme.typography.typeScales.caption.color,
     // Header Logos
     "header-company-logo-url": `url("${r.header.companyLogo.imageUrl}")`,
-    "header-company-logo-size": `var(--size-${r.header.companyLogo.size})`,
-    "header-company-logo-align": r.header.companyLogo.alignment,
-    "header-event-logo-url": `url("${r.header.eventLogo.imageUrl}")`,
-    "header-event-logo-size": `var(--size-${r.header.eventLogo.size})`,
-    "header-event-logo-align": r.header.eventLogo.alignment,
+    "header-company-logo-size": `var(--size-${r.header.companyLogo.size || o.theme.header.companyLogo.size})`,
+    "header-company-logo-align": r.header.companyLogo.alignment || o.theme.header.companyLogo.alignment,
+    "header-event-logo-url": `url("${r.header.eventLogo.imageUrl || o.theme.header.eventLogo.imageUrl}")`,
+    "header-event-logo-size": `var(--size-${r.header.eventLogo.size || o.theme.header.eventLogo.size})`,
+    "header-event-logo-align": r.header.eventLogo.alignment || o.theme.header.eventLogo.alignment,
     // Buttons
-    "btn-primary-text-color": r.buttons.primary.textColor,
-    "btn-primary-rounded": `var(--radius-${r.buttons.primary.rounded})`,
-    "btn-primary-border-thickness": `var(--border-${r.buttons.primary.borderThickness})`,
-    "btn-secondary-text-color": r.buttons.secondary.textColor,
-    "btn-secondary-rounded": `var(--radius-${r.buttons.secondary.rounded})`,
-    "btn-secondary-border-thickness": `var(--border-${r.buttons.secondary.borderThickness})`,
+    "btn-primary-text-color": r.buttons.primary.textColor || o.theme.buttons.primary.textColor,
+    "btn-primary-rounded": `var(--radius-${r.buttons.primary.rounded || o.theme.buttons.primary.rounded})`,
+    "btn-primary-border-thickness": `var(--border-${r.buttons.primary.borderThickness || o.theme.buttons.primary.borderThickness})`,
+    "btn-secondary-text-color": r.buttons.secondary.textColor || o.theme.buttons.secondary.textColor,
+    "btn-secondary-rounded": `var(--radius-${r.buttons.secondary.rounded || o.theme.buttons.secondary.rounded})`,
+    "btn-secondary-border-thickness": `var(--border-${r.buttons.secondary.borderThickness || o.theme.buttons.secondary.borderThickness})`,
     // Surfaces
-    "surface-bg-color": r.surfaces.color,
-    "surface-rounded": `var(--radius-${r.surfaces.rounded})`,
-    "surface-border-thickness": `var(--border-${r.surfaces.borderThickness})`,
-    "surface-border-color": r.surfaces.borderColor,
+    "surface-bg-color": r.surfaces.color || o.theme.surfaces.color,
+    "surface-rounded": `var(--radius-${r.surfaces.rounded || o.theme.surfaces.rounded})`,
+    "surface-border-thickness": `var(--border-${r.surfaces.borderThickness || o.theme.surfaces.borderThickness})`,
+    "surface-border-color": r.surfaces.borderColor || o.theme.surfaces.borderColor,
     // Background
-    "background-color": r.background.color,
-    "background-image-portrait": `url("${r.background.portraitImageUrl}")`,
-    "background-image-landscape": `url("${r.background.landscapeImageUrl}")`
-  }, n = document.documentElement;
-  Object.entries(a).forEach(([c, i]) => {
-    i && n.style.setProperty(`--${c}`, i);
+    "background-color": r.background.color || o.theme.background.color,
+    "background-image-portrait": `url("${r.background.portraitImageUrl || o.theme.background.portraitImageUrl}")`,
+    "background-image-landscape": `url("${r.background.landscapeImageUrl || o.theme.background.landscapeImageUrl}")`
+  }, a = document.documentElement;
+  Object.entries(s).forEach(([l, d]) => {
+    d && a.style.setProperty(`--${l}`, d);
   });
-}, ue = "Button-module__button___iSBxU", ie = {
-  button: ue
+}, ie = "_button_7i646_1", ue = {
+  button: ie
 };
-function B(o) {
-  var r, a, n = "";
-  if (typeof o == "string" || typeof o == "number") n += o;
-  else if (typeof o == "object") if (Array.isArray(o)) {
-    var c = o.length;
-    for (r = 0; r < c; r++) o[r] && (a = B(o[r])) && (n && (n += " "), n += a);
-  } else for (a in o) o[a] && (n && (n += " "), n += a);
-  return n;
+function q(n) {
+  var r, s, a = "";
+  if (typeof n == "string" || typeof n == "number") a += n;
+  else if (typeof n == "object") if (Array.isArray(n)) {
+    var l = n.length;
+    for (r = 0; r < l; r++) n[r] && (s = q(n[r])) && (a && (a += " "), a += s);
+  } else for (s in n) n[s] && (a && (a += " "), a += s);
+  return a;
 }
-function _() {
-  for (var o, r, a = 0, n = "", c = arguments.length; a < c; a++) (o = arguments[a]) && (r = B(o)) && (n && (n += " "), n += r);
-  return n;
+function k() {
+  for (var n, r, s = 0, a = "", l = arguments.length; s < l; s++) (n = arguments[s]) && (r = q(n)) && (a && (a += " "), a += r);
+  return a;
 }
-const Ee = ({
-  children: o,
-  type: r = "primary",
-  style: a,
-  className: n = "",
-  theme: c = null,
-  ...i
-}) => (p.useEffect(() => {
-  v(c);
+const ve = ({
+  children: n,
+  dataType: r = "primary",
+  style: s,
+  className: a = "",
+  theme: l = o.theme,
+  ...d
+}) => (y.useEffect(() => {
+  _(l);
 }, []), /* @__PURE__ */ E.jsx(
   "button",
   {
-    className: _(ie.button, n),
-    type: r,
-    style: { ...a },
-    ...i,
-    children: o
+    className: k(ue.button, a),
+    display: r,
+    style: { ...s },
+    ...d,
+    children: n
   }
-)), de = "Heading1-module__heading___nAbMO", fe = {
+)), de = "_heading_1maqq_1", me = {
   heading: de
-}, ve = ({ children: o, style: r, className: a, ...n }) => (p.useEffect(() => {
-  v();
+}, Ee = ({ children: n, style: r, className: s, ...a }) => (y.useEffect(() => {
+  _();
 }, []), /* @__PURE__ */ E.jsx(
   "h1",
   {
-    className: _(fe.heading, a),
+    className: k(me.heading, s),
     style: { ...r },
-    ...n,
-    children: o
+    ...a,
+    children: n
   }
-)), me = {}, _e = ({ children: o, style: r, className: a, ...n }) => (p.useEffect(() => {
-  v();
+)), fe = {}, _e = ({ children: n, style: r, className: s, ...a }) => (y.useEffect(() => {
+  _();
 }, []), /* @__PURE__ */ E.jsx(
   "h1",
   {
-    className: _(me.surface, a),
+    className: k(fe.surface, s),
     style: { ...r },
-    ...n,
-    children: o
+    ...a,
+    children: n
   }
-)), pe = "Caption-module__caption___N3xIA", be = {
+)), pe = "_caption_fu0gv_1", ye = {
   caption: pe
-}, Re = ({ children: o, style: r, className: a, ...n }) => (p.useEffect(() => {
-  v();
+}, ke = ({ children: n, style: r, className: s, ...a }) => (y.useEffect(() => {
+  _();
 }, []), /* @__PURE__ */ E.jsx(
   "h1",
   {
-    className: _(be.caption, a),
+    className: k(ye.caption, s),
     style: { ...r },
-    ...n,
-    children: o
+    ...a,
+    children: n
   }
-)), ye = "Surface-module__surface___wLxzk", ge = {
-  surface: ye
-}, Te = ({ children: o, style: r, className: a, ...n }) => (p.useEffect(() => {
-  v();
+)), he = "_surface_1sfre_1", ge = {
+  surface: he
+}, Re = ({ children: n, style: r, className: s, ...a }) => (y.useEffect(() => {
+  _();
 }, []), /* @__PURE__ */ E.jsx(
   "div",
   {
-    className: _(ge.surface, a),
+    className: k(ge.surface, s),
     style: { ...r },
-    ...n,
-    children: o
+    ...a,
+    children: n
   }
 ));
 export {
   _e as Body,
-  Ee as Button,
-  Re as Caption,
-  ve as Heading,
-  Te as Surface
+  ve as Button,
+  ke as Caption,
+  Ee as Heading,
+  Re as Surface,
+  _ as fetchStyles
 };

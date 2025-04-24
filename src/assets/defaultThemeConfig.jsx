@@ -17,7 +17,7 @@ export const defaultTheme = {
     },
     themeColors: {
       primary: "#3B82F6", // Modern blue (Tailwind blue-500)
-      secondary: "#6366F1", // Indigo (Tailwind indigo-500)
+      secondary: "#6300F1", // Indigo (Tailwind indigo-500)
     },
     typography: {
       headingFont: {

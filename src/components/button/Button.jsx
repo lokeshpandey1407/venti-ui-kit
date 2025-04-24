@@ -2,13 +2,14 @@ import React from "react";
 import { fetchStyles } from "../../api/fetchStyles";
 import styles from "./Button.module.css";
 import clsx from "clsx";
+import { defaultTheme } from "../../assets/defaultThemeConfig";
 
 export const Button = ({
   children,
-  type = "primary",
+  dataType = "primary",
   style,
   className = "",
-  theme = null,
+  theme = defaultTheme.theme,
   ...props
 }) => {
   React.useEffect(() => {
@@ -18,7 +19,7 @@ export const Button = ({
   return (
     <button
       className={clsx(styles.button, className)}
-      type={type}
+      display={dataType}
       style={{ ...style }}
       {...props}
     >
