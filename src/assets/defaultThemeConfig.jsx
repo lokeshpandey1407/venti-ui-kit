@@ -22,16 +22,17 @@ export const defaultTheme = {
     typography: {
       headingFont: {
         type: "custom",
-        family: "Poppins", // Clean and modern font
+        family: "Roboto", // Clean and modern font
         variants: {
-          bold: "https://example.com/fonts/poppins-bold.ttf",
+          bold: "https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmTggvWl0Qn.ttf",
         },
       },
       bodyFont: {
         type: "google",
-        family: "Inter, sans-serif", // Very readable and modern
+        family: "Roboto", // Very readable and modern
         variants: {
-          regular: "https://example.com/fonts/inter-regular.ttf",
+          regular:
+            "https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmTggvWl0Qn.ttf",
         },
       },
       typeScales: {

@@ -1,6 +1,6 @@
 import React from "react";
 import { fetchStyles } from "../../api/fetchStyles";
-import styles from "./Heading1.module.css";
+import styles from "./Heading.module.css";
 import clsx from "clsx";
 import { defaultTheme } from "../../assets/defaultThemeConfig";
 

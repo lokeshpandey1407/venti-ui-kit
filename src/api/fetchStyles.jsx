@@ -1,7 +1,37 @@
 import { defaultTheme } from "../assets/defaultThemeConfig";
 
+const loadFontFace = (fontName, fontUrl) => {
+  const style = document.createElement("style");
+  style.innerHTML = `
+    @font-face {
+      font-family: '${fontName}';
+      src: url('${fontUrl}') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
+  `;
+  document.head.appendChild(style);
+};
 export const fetchStyles = async (currentTheme) => {
   const theme = currentTheme || defaultTheme.theme;
+  const headingFont =
+    theme?.typography?.headingFont?.variants?.regular ||
+    defaultTheme.theme?.typography?.headingFont?.variants?.regular;
+
+  const bodyFont =
+    theme?.typography?.bodyFont?.variants?.regular ||
+    defaultTheme.theme?.typography?.bodyFont?.variants?.regular;
+
+  loadFontFace(
+    theme.typography.headingFont.family ||
+      defaultTheme.theme.typography.headingFont.family,
+    headingFont
+  );
+  loadFontFace(
+    theme.typography.bodyFont.family ||
+      defaultTheme.theme.typography.bodyFont.family,
+    bodyFont
+  );
   console.log(theme);
 
   const cssVars = {

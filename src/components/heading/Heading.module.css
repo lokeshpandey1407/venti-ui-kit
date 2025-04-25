@@ -1,0 +1,9 @@
+.heading {
+  font-family: var(--font-heading-family), sans-serif;
+
+  color: var(--heading-color);
+  font-weight: bold;
+  font-size: 2.5rem; /* You can use clamp() for responsiveness */
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}

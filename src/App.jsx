@@ -1,6 +1,6 @@
 import "./App.css";
 import { Button } from "./components/button/Button";
-import { Heading } from "./components/heading1/Heading1";
+import { Heading } from "./components/heading/Heading";
 import { Body } from "./components/body/Body";
 import { Caption } from "./components/caption/Caption";
 import { Surface } from "./components/surface/Surface";
