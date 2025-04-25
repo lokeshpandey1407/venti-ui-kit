@@ -17,13 +17,13 @@
   color: var(--btn-secondary-text-color);
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .button[display="primary"]:hover {
-  background-color: blue; /* slightly darker shade of primary */
+  filter: brightness(0.8); /* slightly darker shade of primary */
 }
 
 .button[display="secondary"]:hover {
-  background-color: rgb(145, 66, 66); /* slightly darker shade of primary */
+  filter: brightness(0.8); /* slightly darker shade of primary */
 }

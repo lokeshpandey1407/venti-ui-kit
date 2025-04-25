@@ -1,8 +1,8 @@
 import { defaultTheme } from "../assets/defaultThemeConfig";
 
 export const fetchStyles = async (currentTheme) => {
-  console.log(defaultTheme.theme);
   const theme = currentTheme || defaultTheme.theme;
+  console.log(theme);
 
   const cssVars = {
     // Theme Colors
@@ -15,12 +15,12 @@ export const fetchStyles = async (currentTheme) => {
     "font-heading-type":
       theme.typography.headingFont.type ||
       defaultTheme.theme.typography.headingFont.type,
+    "font-heading-family":
+      theme.typography.headingFont.family ||
+      defaultTheme.theme.typography.headingFont.family,
     "font-heading-bold":
       theme.typography.headingFont.variants.bold ||
       defaultTheme.theme.typography.headingFont.variants.bold,
-    "font-heading-size-adjustment":
-      theme.typography.headingFont.sizeAdjustment ||
-      defaultTheme.theme.typography.headingFont.sizeAdjustment,
 
     // Typography - Body
     "font-body-type":

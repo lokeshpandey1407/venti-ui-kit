@@ -1,4 +1,4 @@
-(function(){"use strict";try{if(typeof document<"u"){var o=document.createElement("style");o.appendChild(document.createTextNode(':root{--size-sm: 32px;--size-md: 64px;--size-lg: 96px;--border-sm: 1px;--border-md: 2px;--border-lg: 4px;--radius-none: 0;--radius-sm: 4px;--radius-md: 8px;--radius-lg: 12px;--radius-full: 9999px;--venti-color-primary: yellow;--venti-color-secondary: red;--font-heading-type: custom;--font-heading-bold: url(https://example.com/fonts/bold.ttf);--font-body-type: google;--font-body-family: "Roboto", sans-serif;--font-body-regular: url(https://example.com/fonts/regular.ttf);--heading-font: var(--font-heading-type);--heading-color: #222222;--subheading-font: var(--font-body-type);--subheading-color: #444444;--body-text-color: #333333;--caption-text-color: #666666;--header-company-logo-url: url(https://example.com/logo.png);--header-company-logo-size: var(--size-md);--header-company-logo-align: left;--header-event-logo-url: url(https://example.com/event.png);--header-event-logo-size: var(--size-md);--header-event-logo-align: right;--footer-sponsor-icon-1: url(https://example.com/sponsor1.png);--footer-sponsor-icon-2: url(https://example.com/sponsor2.png);--btn-primary-text-color: #ffffff;--btn-primary-rounded: var(--radius-md);--btn-primary-border-thickness: var(--border-md);--btn-secondary-text-color: #333333;--btn-secondary-rounded: var(--radius-lg);--btn-secondary-border-thickness: var(--border-sm);--surface-bg-color: #ffffff;--surface-rounded: var(--radius-sm);--surface-border-thickness: var(--border-sm);--surface-border-color: #dddddd;--background-color: #f5f5f5;--background-image-portrait: url(https://example.com/bg-portrait.jpg);--background-image-landscape: url(https://example.com/bg-landscape.jpg)}._button_7i646_1[display=primary]{padding:10px 20px;background-color:var(--venti-color-primary);border:var(--btn-primary-border-thickness) solid var(--venti-color-primary);border-radius:var(--btn-primary-rounded);color:var(--btn-primary-text-color);cursor:pointer;font-weight:700;transition:background-color .2s ease-in-out}._button_7i646_1[display=secondary]{padding:10px 20px;background-color:var(--venti-color-secondary);border:var(--btn-secondary-border-thickness) solid var(--venti-color-primary);border-radius:var(--btn-secondary-rounded);color:var(--btn-secondary-text-color);cursor:pointer;font-weight:700;transition:background-color .2s ease-in-out}._button_7i646_1[display=primary]:hover{background-color:#00f}._button_7i646_1[display=secondary]:hover{background-color:#914242}._heading_1maqq_1{font-family:var(--font-heading-family),sans-serif;color:var(--heading-color);font-weight:700;font-size:2.5rem;line-height:1.2;margin-bottom:1rem}._body-text_14yvi_1{font-family:var(--font-body-family),sans-serif;color:var(--body-text-color);font-weight:400;font-size:1rem}._caption_fu0gv_1{font-family:var(--font-body-family),sans-serif;color:var(--caption-text-color);font-weight:400;font-size:.975rem;line-height:1.4;opacity:.8}._surface_1sfre_1{background-color:var(--surface-bg-color);border-radius:var(--surface-rounded);border-width:var(--surface-border-thickness);border-color:var(--surface-border-color);border-style:solid;height:200px;width:200px;display:flex;justify-content:center;align-items:center;box-shadow:0 2px 10px #00000014;padding:1rem;transition:box-shadow .3s ease}')),document.head.appendChild(o)}}catch(r){console.error("vite-plugin-css-injected-by-js",r)}})();
+(function(){"use strict";try{if(typeof document<"u"){var r=document.createElement("style");r.appendChild(document.createTextNode(':root{--size-sm: 32px;--size-md: 64px;--size-lg: 96px;--border-sm: 1px;--border-md: 2px;--border-lg: 4px;--radius-none: 0;--radius-sm: 4px;--radius-md: 8px;--radius-lg: 12px;--radius-full: 9999px;--venti-color-primary: yellow;--venti-color-secondary: red;--font-heading-type: custom;--font-heading-family: "Roboto", sans-serif;--font-heading-bold: url(https://example.com/fonts/bold.ttf);--font-body-type: google;--font-body-family: "Roboto", sans-serif;--font-body-regular: url(https://example.com/fonts/regular.ttf);--heading-font: var(--font-heading-type);--heading-color: #222222;--subheading-font: var(--font-body-type);--subheading-color: #444444;--body-text-color: #333333;--caption-text-color: #666666;--header-company-logo-url: url(https://example.com/logo.png);--header-company-logo-size: var(--size-md);--header-company-logo-align: left;--header-event-logo-url: url(https://example.com/event.png);--header-event-logo-size: var(--size-md);--header-event-logo-align: right;--footer-sponsor-icon-1: url(https://example.com/sponsor1.png);--footer-sponsor-icon-2: url(https://example.com/sponsor2.png);--btn-primary-text-color: #ffffff;--btn-primary-rounded: var(--radius-md);--btn-primary-border-thickness: var(--border-md);--btn-secondary-text-color: #333333;--btn-secondary-rounded: var(--radius-lg);--btn-secondary-border-thickness: var(--border-sm);--surface-bg-color: #ffffff;--surface-rounded: var(--radius-sm);--surface-border-thickness: var(--border-sm);--surface-border-color: #dddddd;--background-color: #f5f5f5;--background-image-portrait: url(https://example.com/bg-portrait.jpg);--background-image-landscape: url(https://example.com/bg-landscape.jpg)}._button_ru2iu_1[display=primary]{padding:10px 20px;background-color:var(--venti-color-primary);border:var(--btn-primary-border-thickness) solid var(--venti-color-primary);border-radius:var(--btn-primary-rounded);color:var(--btn-primary-text-color);cursor:pointer;font-weight:700;transition:background-color .2s ease-in-out}._button_ru2iu_1[display=secondary]{padding:10px 20px;background-color:var(--venti-color-secondary);border:var(--btn-secondary-border-thickness) solid var(--venti-color-primary);border-radius:var(--btn-secondary-rounded);color:var(--btn-secondary-text-color);cursor:pointer;font-weight:700;transition:background-color .3s ease-in-out}._button_ru2iu_1[display=primary]:hover,._button_ru2iu_1[display=secondary]:hover{filter:brightness(.8)}._heading_1maqq_1{font-family:var(--font-heading-family),sans-serif;color:var(--heading-color);font-weight:700;font-size:2.5rem;line-height:1.2;margin-bottom:1rem}._body_p904c_1{font-family:var(--font-body-family),sans-serif;color:var(--body-text-color);font-weight:400;font-size:1rem}._caption_fu0gv_1{font-family:var(--font-body-family),sans-serif;color:var(--caption-text-color);font-weight:400;font-size:.975rem;line-height:1.4;opacity:.8}._surface_b2ww1_1{background-color:var(--surface-bg-color);border-radius:var(--surface-rounded);border-width:var(--surface-border-thickness);border-color:var(--surface-border-color);border-style:solid;min-height:200px;min-width:200px;box-shadow:0 2px 10px #00000014;padding:1rem;transition:box-shadow .3s ease}')),document.head.appendChild(r)}}catch(o){console.error("vite-plugin-css-injected-by-js",o)}})();
 import y from "react";
 var T = { exports: {} }, b = {};
 /**
@@ -15,22 +15,22 @@ function se() {
   if (D) return b;
   D = 1;
   var n = Symbol.for("react.transitional.element"), r = Symbol.for("react.fragment");
-  function s(a, l, d) {
+  function a(s, c, d) {
     var h = null;
-    if (d !== void 0 && (h = "" + d), l.key !== void 0 && (h = "" + l.key), "key" in l) {
+    if (d !== void 0 && (h = "" + d), c.key !== void 0 && (h = "" + c.key), "key" in c) {
       d = {};
-      for (var g in l)
-        g !== "key" && (d[g] = l[g]);
-    } else d = l;
-    return l = d.ref, {
+      for (var g in c)
+        g !== "key" && (d[g] = c[g]);
+    } else d = c;
+    return c = d.ref, {
       $$typeof: n,
-      type: a,
+      type: s,
       key: h,
-      ref: l !== void 0 ? l : null,
+      ref: c !== void 0 ? c : null,
       props: d
     };
   }
-  return b.Fragment = r, b.jsx = s, b.jsxs = s, b;
+  return b.Fragment = r, b.jsx = a, b.jsxs = a, b;
 }
 var v = {};
 /**
@@ -91,7 +91,7 @@ function ce() {
     function r(e) {
       return "" + e;
     }
-    function s(e) {
+    function a(e) {
       try {
         r(e);
         var t = !1;
@@ -100,15 +100,15 @@ function ce() {
       }
       if (t) {
         t = console;
-        var c = t.error, i = typeof Symbol == "function" && Symbol.toStringTag && e[Symbol.toStringTag] || e.constructor.name || "Object";
-        return c.call(
+        var l = t.error, i = typeof Symbol == "function" && Symbol.toStringTag && e[Symbol.toStringTag] || e.constructor.name || "Object";
+        return l.call(
           t,
           "The provided key is an unsupported type %s. This value must be coerced to a string before using it here.",
           i
         ), r(e);
       }
     }
-    function a(e) {
+    function s(e) {
       if (e === x) return "<>";
       if (typeof e == "object" && e !== null && e.$$typeof === N)
         return "<...>";
@@ -119,7 +119,7 @@ function ce() {
         return "<...>";
       }
     }
-    function l() {
+    function c() {
       var e = S.A;
       return e === null ? null : e.getOwner();
     }
@@ -134,14 +134,14 @@ function ce() {
       return e.key !== void 0;
     }
     function g(e, t) {
-      function c() {
+      function l() {
         L || (L = !0, console.error(
           "%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)",
           t
         ));
       }
-      c.isReactWarning = !0, Object.defineProperty(e, "key", {
-        get: c,
+      l.isReactWarning = !0, Object.defineProperty(e, "key", {
+        get: l,
         configurable: !0
       });
     }
@@ -151,14 +151,14 @@ function ce() {
         "Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."
       )), e = this.props.ref, e !== void 0 ? e : null;
     }
-    function H(e, t, c, i, f, m, A, O) {
-      return c = m.ref, e = {
+    function H(e, t, l, i, f, m, A, O) {
+      return l = m.ref, e = {
         $$typeof: C,
         type: e,
         key: t,
         props: m,
         _owner: f
-      }, (c !== void 0 ? c : null) !== null ? Object.defineProperty(e, "ref", {
+      }, (l !== void 0 ? l : null) !== null ? Object.defineProperty(e, "ref", {
         enumerable: !1,
         get: B
       }) : Object.defineProperty(e, "ref", { enumerable: !1, value: null }), e._store = {}, Object.defineProperty(e._store, "validated", {
@@ -183,25 +183,25 @@ function ce() {
         value: O
       }), Object.freeze && (Object.freeze(e.props), Object.freeze(e)), e;
     }
-    function P(e, t, c, i, f, m, A, O) {
+    function F(e, t, l, i, f, m, A, O) {
       var u = t.children;
       if (u !== void 0)
         if (i)
           if (ne(u)) {
             for (i = 0; i < u.length; i++)
-              w(u[i]);
+              P(u[i]);
             Object.freeze && Object.freeze(u);
           } else
             console.error(
               "React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead."
             );
-        else w(u);
+        else P(u);
       if ($.call(t, "key")) {
         u = n(e);
         var p = Object.keys(t).filter(function(ae) {
           return ae !== "key";
         });
-        i = 0 < p.length ? "{key: someKey, " + p.join(": ..., ") + ": ...}" : "{key: someKey}", Y[u + i] || (p = 0 < p.length ? "{" + p.join(": ..., ") + ": ...}" : "{}", console.error(
+        i = 0 < p.length ? "{key: someKey, " + p.join(": ..., ") + ": ...}" : "{key: someKey}", z[u + i] || (p = 0 < p.length ? "{" + p.join(": ..., ") + ": ...}" : "{}", console.error(
           `A props object containing a "key" prop is being spread into JSX:
   let props = %s;
   <%s {...props} />
@@ -212,28 +212,28 @@ React keys must be passed directly to JSX without using spread:
           u,
           p,
           u
-        ), Y[u + i] = !0);
+        ), z[u + i] = !0);
       }
-      if (u = null, c !== void 0 && (s(c), u = "" + c), h(t) && (s(t.key), u = "" + t.key), "key" in t) {
-        c = {};
-        for (var F in t)
-          F !== "key" && (c[F] = t[F]);
-      } else c = t;
+      if (u = null, l !== void 0 && (a(l), u = "" + l), h(t) && (a(t.key), u = "" + t.key), "key" in t) {
+        l = {};
+        for (var w in t)
+          w !== "key" && (l[w] = t[w]);
+      } else l = t;
       return u && g(
-        c,
+        l,
         typeof e == "function" ? e.displayName || e.name || "Unknown" : e
       ), H(
         e,
         u,
         m,
         f,
-        l(),
-        c,
+        c(),
+        l,
         A,
         O
       );
     }
-    function w(e) {
+    function P(e) {
       typeof e == "object" && e !== null && e.$$typeof === C && e._store && (e._store.validated = 1);
     }
     var R = y, C = Symbol.for("react.transitional.element"), J = Symbol.for("react.portal"), x = Symbol.for("react.fragment"), V = Symbol.for("react.strict_mode"), G = Symbol.for("react.profiler"), X = Symbol.for("react.consumer"), Z = Symbol.for("react.context"), Q = Symbol.for("react.forward_ref"), K = Symbol.for("react.suspense"), ee = Symbol.for("react.suspense_list"), re = Symbol.for("react.memo"), N = Symbol.for("react.lazy"), te = Symbol.for("react.activity"), oe = Symbol.for("react.client.reference"), S = R.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, $ = Object.prototype.hasOwnProperty, ne = Array.isArray, j = console.createTask ? console.createTask : function() {
@@ -247,30 +247,30 @@ React keys must be passed directly to JSX without using spread:
     var L, I = {}, U = R["react-stack-bottom-frame"].bind(
       R,
       d
-    )(), z = j(a(d)), Y = {};
-    v.Fragment = x, v.jsx = function(e, t, c, i, f) {
+    )(), Y = j(s(d)), z = {};
+    v.Fragment = x, v.jsx = function(e, t, l, i, f) {
       var m = 1e4 > S.recentlyCreatedOwnerStacks++;
-      return P(
+      return F(
         e,
         t,
-        c,
+        l,
         !1,
         i,
         f,
         m ? Error("react-stack-top-frame") : U,
-        m ? j(a(e)) : z
+        m ? j(s(e)) : Y
       );
-    }, v.jsxs = function(e, t, c, i, f) {
+    }, v.jsxs = function(e, t, l, i, f) {
       var m = 1e4 > S.recentlyCreatedOwnerStacks++;
-      return P(
+      return F(
         e,
         t,
-        c,
+        l,
         !0,
         i,
         f,
         m ? Error("react-stack-top-frame") : U,
-        m ? j(a(e)) : z
+        m ? j(s(e)) : Y
       );
     };
   }()), v;
@@ -371,15 +371,16 @@ const o = {
     }
   }
 }, _ = async (n) => {
-  console.log(o.theme);
-  const r = n || o.theme, s = {
+  const r = n || o.theme;
+  console.log(r);
+  const a = {
     // Theme Colors
     "venti-color-primary": r.themeColors.primary || o.theme.themeColors.primary,
     "venti-color-secondary": r.themeColors.secondary || o.theme.themeColors.secondary,
     // Typography - Heading
     "font-heading-type": r.typography.headingFont.type || o.theme.typography.headingFont.type,
+    "font-heading-family": r.typography.headingFont.family || o.theme.typography.headingFont.family,
     "font-heading-bold": r.typography.headingFont.variants.bold || o.theme.typography.headingFont.variants.bold,
-    "font-heading-size-adjustment": r.typography.headingFont.sizeAdjustment || o.theme.typography.headingFont.sizeAdjustment,
     // Typography - Body
     "font-body-type": r.typography.bodyFont.type || o.theme.typography.bodyFont.type,
     "font-body-family": r.typography.bodyFont.family || o.theme.typography.bodyFont.family,
@@ -414,96 +415,122 @@ const o = {
     "background-color": r.background.color || o.theme.background.color,
     "background-image-portrait": `url("${r.background.portraitImageUrl || o.theme.background.portraitImageUrl}")`,
     "background-image-landscape": `url("${r.background.landscapeImageUrl || o.theme.background.landscapeImageUrl}")`
-  }, a = document.documentElement;
-  Object.entries(s).forEach(([l, d]) => {
-    d && a.style.setProperty(`--${l}`, d);
+  }, s = document.documentElement;
+  Object.entries(a).forEach(([c, d]) => {
+    d && s.style.setProperty(`--${c}`, d);
   });
-}, ie = "_button_7i646_1", ue = {
+}, ie = "_button_ru2iu_1", ue = {
   button: ie
 };
 function q(n) {
-  var r, s, a = "";
-  if (typeof n == "string" || typeof n == "number") a += n;
+  var r, a, s = "";
+  if (typeof n == "string" || typeof n == "number") s += n;
   else if (typeof n == "object") if (Array.isArray(n)) {
-    var l = n.length;
-    for (r = 0; r < l; r++) n[r] && (s = q(n[r])) && (a && (a += " "), a += s);
-  } else for (s in n) n[s] && (a && (a += " "), a += s);
-  return a;
+    var c = n.length;
+    for (r = 0; r < c; r++) n[r] && (a = q(n[r])) && (s && (s += " "), s += a);
+  } else for (a in n) n[a] && (s && (s += " "), s += a);
+  return s;
 }
 function k() {
-  for (var n, r, s = 0, a = "", l = arguments.length; s < l; s++) (n = arguments[s]) && (r = q(n)) && (a && (a += " "), a += r);
-  return a;
+  for (var n, r, a = 0, s = "", c = arguments.length; a < c; a++) (n = arguments[a]) && (r = q(n)) && (s && (s += " "), s += r);
+  return s;
 }
-const ve = ({
+const Ee = ({
   children: n,
   dataType: r = "primary",
-  style: s,
-  className: a = "",
-  theme: l = o.theme,
+  style: a,
+  className: s = "",
+  theme: c = o.theme,
   ...d
 }) => (y.useEffect(() => {
-  _(l);
-}, []), /* @__PURE__ */ E.jsx(
+  _(c);
+}, [c]), /* @__PURE__ */ E.jsx(
   "button",
   {
-    className: k(ue.button, a),
+    className: k(ue.button, s),
     display: r,
-    style: { ...s },
+    style: { ...a },
     ...d,
     children: n
   }
 )), de = "_heading_1maqq_1", me = {
   heading: de
-}, Ee = ({ children: n, style: r, className: s, ...a }) => (y.useEffect(() => {
-  _();
-}, []), /* @__PURE__ */ E.jsx(
+}, _e = ({
+  children: n,
+  style: r,
+  theme: a = o.theme,
+  className: s,
+  ...c
+}) => (y.useEffect(() => {
+  _(a);
+}, [a]), /* @__PURE__ */ E.jsx(
   "h1",
   {
     className: k(me.heading, s),
     style: { ...r },
-    ...a,
+    ...c,
     children: n
   }
-)), fe = {}, _e = ({ children: n, style: r, className: s, ...a }) => (y.useEffect(() => {
-  _();
-}, []), /* @__PURE__ */ E.jsx(
+)), fe = "_body_p904c_1", pe = {
+  body: fe
+}, ke = ({
+  children: n,
+  style: r,
+  theme: a = o.theme,
+  className: s,
+  ...c
+}) => (y.useEffect(() => {
+  _(a);
+}, [a]), /* @__PURE__ */ E.jsx(
   "h1",
   {
-    className: k(fe.surface, s),
+    className: k(pe.body, s),
     style: { ...r },
-    ...a,
+    ...c,
     children: n
   }
-)), pe = "_caption_fu0gv_1", ye = {
-  caption: pe
-}, ke = ({ children: n, style: r, className: s, ...a }) => (y.useEffect(() => {
-  _();
-}, []), /* @__PURE__ */ E.jsx(
+)), ye = "_caption_fu0gv_1", he = {
+  caption: ye
+}, Re = ({
+  children: n,
+  style: r,
+  theme: a = o.theme,
+  className: s,
+  ...c
+}) => (y.useEffect(() => {
+  _(a);
+}, [a]), /* @__PURE__ */ E.jsx(
   "h1",
   {
-    className: k(ye.caption, s),
+    className: k(he.caption, s),
     style: { ...r },
-    ...a,
+    ...c,
     children: n
   }
-)), he = "_surface_1sfre_1", ge = {
-  surface: he
-}, Re = ({ children: n, style: r, className: s, ...a }) => (y.useEffect(() => {
-  _();
-}, []), /* @__PURE__ */ E.jsx(
+)), ge = "_surface_b2ww1_1", be = {
+  surface: ge
+}, Te = ({
+  children: n,
+  style: r,
+  theme: a = o.theme,
+  className: s,
+  ...c
+}) => (y.useEffect(() => {
+  _(a);
+}, [a]), /* @__PURE__ */ E.jsx(
   "div",
   {
-    className: k(ge.surface, s),
+    className: k(be.surface, s),
     style: { ...r },
-    ...a,
+    ...c,
     children: n
   }
 ));
 export {
-  _e as Body,
-  ve as Button,
-  ke as Caption,
-  Ee as Heading,
-  Re as Surface,
+  ke as Body,
+  Ee as Button,
+  Re as Caption,
+  _e as Heading,
+  Te as Surface,
   _ as fetchStyles
 };

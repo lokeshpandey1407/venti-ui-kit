@@ -2,11 +2,18 @@ import React from "react";
 import { fetchStyles } from "../../api/fetchStyles";
 import styles from "./Heading1.module.css";
 import clsx from "clsx";
+import { defaultTheme } from "../../assets/defaultThemeConfig";
 
-export const Heading = ({ children, style, className, ...props }) => {
+export const Heading = ({
+  children,
+  style,
+  theme = defaultTheme.theme,
+  className,
+  ...props
+}) => {
   React.useEffect(() => {
-    fetchStyles();
-  }, []);
+    fetchStyles(theme);
+  }, [theme]);
 
   return (
     <h1

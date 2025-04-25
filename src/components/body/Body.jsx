@@ -2,15 +2,22 @@ import React from "react";
 import { fetchStyles } from "../../api/fetchStyles";
 import styles from "./Body.module.css";
 import clsx from "clsx";
+import { defaultTheme } from "../../assets/defaultThemeConfig";
 
-export const Body = ({ children, style, className, ...props }) => {
+export const Body = ({
+  children,
+  style,
+  theme = defaultTheme.theme,
+  className,
+  ...props
+}) => {
   React.useEffect(() => {
-    fetchStyles();
-  }, []);
+    fetchStyles(theme);
+  }, [theme]);
 
   return (
     <h1
-      className={clsx(styles.surface, className)}
+      className={clsx(styles.body, className)}
       style={{ ...style }}
       {...props}
     >

@@ -22,8 +22,8 @@
 
   /* Typography - Heading Font */
   --font-heading-type: custom;
+  --font-heading-family: "Roboto", sans-serif;
   --font-heading-bold: url("https://example.com/fonts/bold.ttf");
-
 
   /* Typography - Body Font */
   --font-body-type: google;

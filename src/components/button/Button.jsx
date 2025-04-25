@@ -14,7 +14,7 @@ export const Button = ({
 }) => {
   React.useEffect(() => {
     fetchStyles(theme);
-  }, []);
+  }, [theme]);
 
   return (
     <button
