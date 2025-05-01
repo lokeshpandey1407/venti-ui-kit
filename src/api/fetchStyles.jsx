@@ -16,7 +16,7 @@ export const fetchStyles = async (currentTheme) => {
   const theme = currentTheme || defaultTheme.theme;
   const headingFont =
     theme?.typography?.headingFont?.variants?.regular ||
-    defaultTheme.theme?.typography?.headingFont?.variants?.regular;
+    defaultTheme.theme?.typography?.headingFont?.variants?.bold;
 
   const bodyFont =
     theme?.typography?.bodyFont?.variants?.regular ||
@@ -32,7 +32,6 @@ export const fetchStyles = async (currentTheme) => {
       defaultTheme.theme.typography.bodyFont.family,
     bodyFont
   );
-  console.log(theme);
 
   const cssVars = {
     // Theme Colors

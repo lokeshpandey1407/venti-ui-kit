@@ -22,7 +22,7 @@ export default defineConfig({
       entry: path.resolve(__dirname, "index.js"),
       name: "venti_ui", // Global variable for UMD
       fileName: (format) => `venti_ui.${format}.js`,
-      formats: ["umd", "es"],
+      formats: ["umd", "cjs", "es"],
     },
     rollupOptions: {
       // Don't bundle react, react-dom (they must be available in consumer)
