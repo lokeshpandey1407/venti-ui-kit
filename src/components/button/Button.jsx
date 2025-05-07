@@ -20,3 +20,11 @@ export const Button = ({
     </button>
   );
 };
+
+// const Button = () => {
+//   return (
+//     <div>My component</div>
+//   );
+// };
+
+// export default Button;

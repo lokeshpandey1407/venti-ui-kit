@@ -12,7 +12,7 @@ const loadFontFace = (fontName, fontUrl) => {
   `;
   document.head.appendChild(style);
 };
-export const fetchStyles = async (currentTheme) => {
+export const applyStyles = async (currentTheme) => {
   const theme = currentTheme || defaultTheme.theme;
   const headingFont =
     theme?.typography?.headingFont?.variants?.regular ||
@@ -23,13 +23,13 @@ export const fetchStyles = async (currentTheme) => {
     defaultTheme.theme?.typography?.bodyFont?.variants?.regular;
 
   loadFontFace(
-    theme.typography.headingFont.family ||
-      defaultTheme.theme.typography.headingFont.family,
+    theme.typography?.headingFont?.family ||
+      defaultTheme.theme.typography?.headingFont?.family,
     headingFont
   );
   loadFontFace(
-    theme.typography.bodyFont.family ||
-      defaultTheme.theme.typography.bodyFont.family,
+    theme.typography.bodyFont?.family ||
+      defaultTheme.theme.typography?.bodyFont?.family,
     bodyFont
   );
 
@@ -45,8 +45,8 @@ export const fetchStyles = async (currentTheme) => {
       theme.typography.headingFont.type ||
       defaultTheme.theme.typography.headingFont.type,
     "font-heading-family":
-      theme.typography.headingFont.family ||
-      defaultTheme.theme.typography.headingFont.family,
+      theme.typography?.headingFont?.family ||
+      defaultTheme.theme.typography?.headingFont?.family,
     "font-heading-bold":
       theme.typography.headingFont.variants.bold ||
       defaultTheme.theme.typography.headingFont.variants.bold,
@@ -56,25 +56,25 @@ export const fetchStyles = async (currentTheme) => {
       theme.typography.bodyFont.type ||
       defaultTheme.theme.typography.bodyFont.type,
     "font-body-family":
-      theme.typography.bodyFont.family ||
-      defaultTheme.theme.typography.bodyFont.family,
+      theme.typography?.bodyFont?.family ||
+      defaultTheme.theme.typography?.bodyFont?.family,
     "font-body-regular":
       theme.typography.bodyFont.variants.regular ||
       defaultTheme.theme.typography.bodyFont.variants.regular,
 
     // Type Scales
     "heading-font":
-      theme.typography.typeScales.heading.font ||
-      defaultTheme.theme.typography.typeScales.heading.font,
+      theme.typography?.typeScales?.heading?.font ||
+      defaultTheme.theme.typography?.typeScales?.heading?.font,
     "heading-color":
-      theme.typography.typeScales.heading.color ||
-      defaultTheme.theme.typography.typeScales.heading.color,
+      theme?.typography?.typeScales?.heading?.color ||
+      defaultTheme?.theme?.typography?.typeScales?.heading?.color,
     "subheading-font":
-      theme.typography.typeScales.subHeading.font ||
-      defaultTheme.theme.typography.typeScales.subHeading.font,
+      theme?.typography?.typeScales?.subHeading?.font ||
+      defaultTheme?.theme?.typography?.typeScales?.subHeading?.font,
     "subheading-color":
-      theme.typography.typeScales.subHeading.color ||
-      defaultTheme.theme.typography.typeScales.subHeading.color,
+      theme.typography?.typeScales?.subHeading?.color ||
+      defaultTheme.theme?.typography?.typeScales?.subHeading?.color,
     "body-text-color":
       theme.typography.typeScales.body.color ||
       defaultTheme.theme.typography.typeScales.body.color,
