@@ -115,6 +115,9 @@ export const applyStyles = async (currentTheme) => {
       theme.buttons.primary.borderThickness ||
       defaultTheme.theme.buttons.primary.borderThickness
     })`,
+    "btn-primary-border-color":
+      theme?.buttons?.primary?.borderColor ||
+      defaultTheme?.theme?.buttons?.primary?.borderColor,
 
     "btn-secondary-text-color":
       theme.buttons.secondary.textColor ||
@@ -127,6 +130,9 @@ export const applyStyles = async (currentTheme) => {
       theme.buttons.secondary.borderThickness ||
       defaultTheme.theme.buttons.secondary.borderThickness
     })`,
+    "btn-secondary-border-color":
+      theme?.buttons?.secondary?.borderColor ||
+      defaultTheme?.theme?.buttons?.secondary?.borderColor,
 
     // Surfaces
     "surface-bg-color":

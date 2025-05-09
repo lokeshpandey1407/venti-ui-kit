@@ -13,7 +13,7 @@ export const defaultTheme = {
       },
     },
     footer: {
-      iconUrls: [], // Optional: add sponsor icons if needed
+      imageUrl: "", // Optional: add sponsor image if needed
     },
     themeColors: {
       primary: "#3B82F6", // Modern blue (Tailwind blue-500)
@@ -57,11 +57,13 @@ export const defaultTheme = {
         textColor: "#FFFFFF",
         rounded: "lg",
         borderThickness: "lg",
+        borderColor: "#FFFFFF",
       },
       secondary: {
         textColor: "#1F2937", // Almost black for contrast on lighter buttons
         rounded: "sm",
         borderThickness: "sm",
+        borderColor: "#FFFFFF",
       },
     },
     surfaces: {

@@ -5,12 +5,13 @@
   --size-lg: 96px;
 
   /* Border Thickness Scale */
+  --border-none: 0px;
   --border-sm: 1px;
   --border-md: 2px;
   --border-lg: 4px;
 
   /* Border Radius Scale */
-  --radius-none: 0;
+  --radius-none: 0px;
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
@@ -57,10 +58,13 @@
   --btn-primary-text-color: #ffffff;
   --btn-primary-rounded: var(--radius-md);
   --btn-primary-border-thickness: var(--border-md);
+  --btn-primary-border-color: #ffffff;
 
   --btn-secondary-text-color: #333333;
   --btn-secondary-rounded: var(--radius-lg);
   --btn-secondary-border-thickness: var(--border-sm);
+  --btn-secondary-border-color: #ffffff;
+
 
   /* Surfaces */
   --surface-bg-color: #ffffff;

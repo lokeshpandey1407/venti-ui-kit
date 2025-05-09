@@ -1,7 +1,7 @@
 .button[display="primary"] {
   padding: 10px 20px;
   background-color: var(--venti-color-primary);
-  border: var(--btn-primary-border-thickness) solid var(--venti-color-primary);
+  border: var(--btn-primary-border-thickness) solid var(--btn-primary-border-color);
   border-radius: var(--btn-primary-rounded);
   color: var(--btn-primary-text-color);
   cursor: pointer;
@@ -12,7 +12,7 @@
 .button[display="secondary"] {
   padding: 10px 20px;
   background-color: var(--venti-color-secondary);
-  border: var(--btn-secondary-border-thickness) solid var(--venti-color-primary);
+  border: var(--btn-secondary-border-thickness) solid var(--btn-secondary-border-color);
   border-radius: var(--btn-secondary-rounded);
   color: var(--btn-secondary-text-color);
   cursor: pointer;
